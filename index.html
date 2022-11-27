@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Roboto+Mono:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Magic Sweet</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-padding w3-card carousel-slide carousel-fade"
+        id="navbar"
+        data-bs-ride="true"
+      >
+        <a href="#home" class="w3-bar-item w3-button" id="brand">Magic Sweet</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="
+        align-items: center;
+        justify-content: center;
+        display: flex;
+         margin-top: 60px;
+      "
+      id="home"
+    >
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./imagenes/brownie.jpeg"
+              class="mw-100 img-fluid"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imagenes/chocolate-heart.jpeg"
+              class="mw-100 img-fluid"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imagenes/dressers.jpeg"
+              class="mw-100 img-fluid"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <img src="./imagenes/logoms.png" alt="logoms" id="logoms">
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 1100px">
+      <!-- About Section -->
+      <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img
+            src="./imagenes/tortaZanahoria.jpg"
+            class="w3-round w3-image w3-opacity-min"
+            alt="Table Setting"
+            width="600"
+            height="750"
+          />
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 id="about"class="w3-center">Quienes Somos</h1>
+          <br />
+          <h5 class="w3-center">Desde 2020</h5>
+          <p class="w3-large" aling="center">
+            Magic Sweet fue creado por Eylibeth Delgado durante el aislamiento obligatorio en durante la pandemia de covid19.Inicialmente solo se vendia a familiares y amigos por domicilio, llevandoles un poco de dulce a su vida en esos momentos tan Amargos.
+
+            <span class="w3-tag w3-light-grey">seasonal</span> ingredients.
+          </p>
+          <p class="w3-large w3-text-grey w3-hide-medium">
+            Al inico en nuestro menu
+            solo teniamos pudines teniendo como producto estrella nuestra hoy muy
+            conocida torta de zanahoria, hoy gracias a dios tenemos el gusto poder ofrecerles
+            postres frios, galletas,brownies,rollos de canela 
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Menu Section -->
+      <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-col l6 w3-padding-large">
+          <div class="w3-center shadow p-3  rounded" id="menuTitle"><h1>Nuestro Menu</h1></div>
+          <br />
+          <h4>Postres Frios</h4>
+          <p class="w3-text-grey">
+            Postres Frios en 4 variedades chocolate,tres leches,napolen,cheescake
+            en presentaciones de 120 gramos</p>
+          <br />
+
+          <h4>Honey Almond Granola with Fruits</h4>
+          <p class="w3-text-grey">
+            Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00
+          </p>
+          <br />
+
+          <h4>Belgian Waffle</h4>
+          <p class="w3-text-grey">
+            Vanilla flavored batter with malted flour 7.50
+          </p>
+          <br />
+
+          <h4>Scrambled eggs</h4>
+          <p class="w3-text-grey">
+            Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50
+          </p>
+          <br />
+
+          <h4>Blueberry Pancakes</h4>
+          <p class="w3-text-grey">
+            With syrup, butter and lots of berries 8.50
+          </p>
+        </div>
+        <div class="w3-col l6 w3-padding-large">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                src="./imagenes/IMG_20220612_141522.jpg"
+                class="w3-round w3-image w3-opacity-min"
+                alt="Menu"
+                style="width: 300 ; height: 200"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Truffa de Chocolate</h1>
+                <p>100% Puro Chocolate</p>
+                <p>Magic lovers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-64" id="contact" name="contact">
+        <div id="box">
+          <h1 >Contact</h1>
+        </div>
+        <br />
+        <p>
+          Nos interesa saber que opinas de nuestros productos  
+        </p>
+        <p class="w3-large text-primary">
+          <b>La mejor Calidad solo se puede optener usando los mejores ingrendientes </b>
+        </p>
+        <p>
+          Contáctanos danos tu opinion , dudas e inquietudes hacerca de
+          nuestros productos
+        </p>
+        <form  class="w3-container w3-card-4 w3-tail" id="formReg">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Nombre completo"
+              required
+              id="customerName"
+              onkeypress="setValue()"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="number"
+              placeholder="Celular"
+              required
+              id="celular"
+              name="movil"
+              onkeypress="setValue()"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="email"
+              placeholder="email"
+              required
+              id="email"
+              onkeypress="setValue()"
+            />
+          </p>
+          <p>
+            <select
+              class="w3-input w3-padding-16"
+              placeholder="Escoja Una Opcion"
+              required
+              name="contacBy"
+              id="contacBy"
+              onchange="setValue()"
+            >
+              <option disabled selected >Como nos encontraste</option>
+              <option value="friend">Me lo comento un amigo</option>
+              <option value="instagram">Instagram</option>
+              <option value="Facebook">Facebook</option>
+              <option value="universidad">Universidad</option>
+            </select>
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Mensaje"
+              required
+              name="Message"
+              id="Message"
+              onkeypress="setValue()"
+            />
+          </p>
+          <p>
+            <input type="button" class="w3-btn w3-blue-grey" value="Enviar" onclick="sendMail()">
+          </p>
+        </form>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center  w3-padding-32">
+      <p>
+        Powered by
+        <a
+          href="https://www.interactivebytes.co"
+          title="Interactive Bytes"
+          target="https://www.interactivebytes.co"
+          class="w3-hover-text-green"
+          >Interactivebytes</a
+        >
+      </p>
+    </footer>
+    <script src="./scripts.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

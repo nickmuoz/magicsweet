@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+
+#navbar {
+  color: white;
+  background-color: #d800a6;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  white-space: normal;
+  letter-spacing: 4px;
+} 
+
+#brand{
+  font-family: 'Aref Ruqaa Ink', serif;
+  
+}
+
+
+#home{
+    object-position: center;
+}
+img{
+ height: 420px;
+ width: 300px;
+}
+#logoms{
+  height:90px ;
+  width: 120px;
+}
+
+#menuTitle{
+  background-color: #e1f0cd;
+}
+
+/*imagen menu*/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #ABD9FF;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* #about{
+  font-size: 5rem;
+	    text-align: center;
+      height:10vh;
+      line-height: 9vh;
+	    color: #fcedd8;
+	    background: #d52e3f;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 70;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+} */
+/* h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      } */
+#box{
+  border-bottom: 2px solid grey;
+  border-radius: 2px;
+
+}
+
+#menu{
+  background-color: #FFF6BF;
+}
+#menuTitle{
+  background-color: #ABD9FF;
+  font-size: bold;
+}
+
+footer{
+  background-color: #ABD9FF
+}
