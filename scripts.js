@@ -27,7 +27,7 @@ async function sendMail() {
     "html",
     `
 <div class="card">
-    <h1>Bienvenido${customerName}</h1>
+    <h1>Bienvenido${ customerName}</h1>
     <p class="title">Informacion de contacto</p>
     <p>Mi Celuar es: ${movil}</p>
     <p>Mi Correo es: ${to}</p>
@@ -46,7 +46,7 @@ async function sendMail() {
     redirect: "follow",
   };
 
-  fetch("https://hidden-hill-6661.fly.dev/mail/SendMail", requestOptions)
+  fetch("https://magicsweetapi.fly.dev/mail/send-mail", requestOptions)
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((error) => console.log("error", error));
