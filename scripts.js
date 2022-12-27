@@ -48,15 +48,16 @@ async function sendMail() {
 
   fetch("https://magicsweetapi.fly.dev/mail/send-mail", requestOptions)
     .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.log("error", error));
+    // .then((data) => console.log(data))
+    // .catch((error) => console.log("error", error));
   // .then (function (response){
   //   return (JSON.stringify(response))
   // })
-  // .then( response => {
-  //   var contacUs = JSON.stringify(response);
-  //   alert (`gracias ${contacUs} por tu opinion` );
-  //   window.location.href="/menu";
-  // })
-  // .catch((error) => console.log("error", error));
+  .then( response => {
+    var contacUs = JSON.stringify(response);
+    console.log(customerName)
+    alert (`gracias ${contacUs} por tu opinion` );
+    window.location.href="/";
+  })
+ .catch((error) => console.log("error", error));
 }

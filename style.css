@@ -54,6 +54,8 @@ object-fit:scale-down
 
 .flip-card {
   background-color: transparent;
+  position: relative;
+  margin: auto;
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
