@@ -20,12 +20,14 @@
       href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Roboto+Mono:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
     <title>Magic Sweet</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <!-- Navbar (sit on top) -->
-    <div class="w3-top">
+    <nav class="w3-top navbar-expand-md">
       <div
         class="w3-bar w3-padding w3-card carousel-slide carousel-fade"
         id="navbar"
@@ -39,43 +41,85 @@
           <a href="#contact" class="w3-bar-item w3-button">Contact</a>
         </div>
       </div>
-    </div>
+    </nav>
 
     <!-- Header -->
-    <header
-      class="w3-display-container w3-content w3-wide"
-      style="
-        align-items: center;
-        justify-content: center;
-        display: flex;
-         margin-top: 60px;
-      "
-      id="home"
-    >
-      <div
+    <main
+    id="home">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" src="./imagenes/dressers.jpeg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Postres Frios</h1>
+              <p>Deliciosos postres frios en diferentes variedades Napoleon, Tresleches, Cheescake, Chocolate .</p>
+              <p><a class="btn btn-outline-secondary"  href="#contact">Pide Ahora</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="./imagenes/chocolate-heart.jpeg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Chocolateria.</h1>
+              <p>Deliciosos Chocolates rellenos y fresas cubiertas.</p>
+              <p><a class="btn btn-outline-secondary" href="#contact">Pide Ahora</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="./imagenes/brownie.jpeg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Galletas.</h1>
+              <p>Tenemos variedad de galletas chocolate, vainilla, macadamia, red velvet.</p>
+              <p><a class="btn btn-outline-secondary" href="#contact">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      <!-- <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="centerDiv">
           <div class="carousel-item active">
             <img
               src="./imagenes/brownie.jpeg"
-              class="mw-100 img-fluid"
+              class="rounded max-auto img-fluid"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
               src="./imagenes/chocolate-heart.jpeg"
-              class="mw-100 img-fluid"
+              class="rounded max-auto img-fluid"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
               src="./imagenes/dressers.jpeg"
-              class="mw-100 img-fluid"
+              class="rounded max-auto img-fluid"
               alt="..."
             />
           </div>
@@ -98,11 +142,11 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-      <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      </div> -->
+      <!-- <div class="w3-display-bottomleft w3-padding-large w3-opacity">
         <img src="./imagenes/logoms.png" alt="logoms" id="logoms">
-      </div>
-    </header>
+      </div> -->
+    </main>
 
     <!-- Page content -->
     <div class="w3-content" style="max-width: 1100px">
@@ -292,6 +336,9 @@
           class="w3-hover-text-green"
           >Interactivebytes</a
         >
+      </p>
+      <p>
+        @nicolasmuoz
       </p>
     </footer>
     <script src="./scripts.js"></script>

@@ -46,7 +46,7 @@ async function sendMail() {
     redirect: "follow",
   };
 
-  fetch("http://hidden-hill-6661.fly.dev/mail/send-mail", requestOptions)
+  fetch("https://hidden-hill-6661.fly.dev/mail/SendMail", requestOptions)
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((error) => console.log("error", error));
