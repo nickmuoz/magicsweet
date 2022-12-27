@@ -34,15 +34,18 @@ body {
   /* position: absolute; */
   /* object-position: center; */
 }
-img{
- height: 420px;
- width: 300px;
-}
+#imgCarousel{
+object-fit:scale-down
+
+} 
 #logoms{
   height:90px ;
   width: 120px;
 }
+#myCarousel{
+  margin-top: 35px;
 
+}
 #menuTitle{
   background-color: #e1f0cd;
 }
