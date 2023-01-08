@@ -46,6 +46,12 @@ object-fit:scale-down
   margin-top: 35px;
 
 }
+#titleCarousel {
+  font-size: 2.125rem;
+}
+#subTitleCaruosel{
+  font-size: 0.900rem;
+}
 #menuTitle{
   background-color: #e1f0cd;
 }
@@ -130,6 +136,8 @@ footer{
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  max-width: 300px;
+  margin: auto;
 }
 
 /* Declare heights because of positioning of img element */

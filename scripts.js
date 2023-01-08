@@ -27,7 +27,7 @@ async function sendMail() {
     "html",
     `
 <div class="card">
-    <h1>Bienvenido${ customerName}</h1>
+    <h1>Bienvenido ${ customerName}</h1>
     <p class="title">Informacion de contacto</p>
     <p>Mi Celuar es: ${movil}</p>
     <p>Mi Correo es: ${to}</p>
@@ -35,6 +35,7 @@ async function sendMail() {
     <p>Estoy Interesado en: ${html}</p>
 </div>`
   );
+  urlencoded.append("name", customerName)
   urlencoded.append("text", contacBy);
   urlencoded.append("subject", about);
   urlencoded.append("from", "negocioscol@interactivebytes.co");
@@ -48,16 +49,11 @@ async function sendMail() {
 
   fetch("https://magicsweetapi.fly.dev/mail/send-mail", requestOptions)
     .then((response) => response.json())
-    // .then((data) => console.log(data))
-    // .catch((error) => console.log("error", error));
-  // .then (function (response){
-  //   return (JSON.stringify(response))
-  // })
   .then( response => {
     var contacUs = JSON.stringify(response);
     console.log(customerName)
-    alert (`gracias ${contacUs} por tu opinion` );
-    window.location.href="/";
+    alert (`gracias ${ contacUs} por tu opinion` );
+    window.location.href="#home";
   })
  .catch((error) => console.log("error", error));
 }
