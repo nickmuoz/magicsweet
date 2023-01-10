@@ -48,6 +48,9 @@ object-fit:scale-down
 #titleCarousel {
   font-size: 2.125rem;
 }
+#about{
+  background-color: #EAFDFC;
+}
 #subTitleCaruosel{
   font-size: 0.900rem;
 }
