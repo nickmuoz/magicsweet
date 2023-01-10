@@ -50,6 +50,8 @@ object-fit:scale-down
 }
 #about{
   background-color: #EAFDFC;
+  margin-top: 20px;
+  border: 1px solid #86C8BC;
 }
 #subTitleCaruosel{
   font-size: 0.900rem;
