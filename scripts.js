@@ -19,6 +19,9 @@ function setValue(e) {
 }
 
 async function sendMail() {
+  if(Object.keys(dataMail).length === 0){
+    alert("llena los campos por favor")
+  }else{
   const myheaders = new Headers();
   myheaders.append("Content-Type", "application/x-www-form-urlencoded");
   var urlencoded = new URLSearchParams();
@@ -28,7 +31,7 @@ async function sendMail() {
     `
 <div class="card">
     <h1>Bienvenido ${ customerName}</h1>
-    <p class="title">Informacion de contacto</p>
+    <p class="title">Para Nosotros es muy importante tu opinion</p>
     <p>Mi Celuar es: ${movil}</p>
     <p>Mi Correo es: ${to}</p>
     <p>Los Encontre en: ${contacBy}</p>
@@ -56,4 +59,4 @@ async function sendMail() {
     window.location.href="#home";
   })
  .catch((error) => console.log("error", error));
-}
+}}
