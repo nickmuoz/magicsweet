@@ -8,6 +8,10 @@ let contacBy = null;
 let customerName = null;
 let movil = null;
 
+const emailValido = () =>{
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
 //Contact Send Info
 function setValue(e) {
   html = document.getElementById("Message").value;
@@ -16,6 +20,10 @@ function setValue(e) {
   contacBy = document.getElementById("contacBy").value;
   customerName = document.getElementById("customerName").value;
   movil = document.getElementById("celular").value;
+  if(to === " "){
+    alert("escribe nombre de usurio");
+    email.focus()
+  }
 }
 
 async function sendMail() {
