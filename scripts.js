@@ -8,28 +8,33 @@ let contacBy = null;
 let customerName = null;
 let movil = null;
 
-const emailValido = () =>{
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+function validateEmail() {
+  console.log("Validate Mail")
+  var to = document.getElementById("email").value;
+  var pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  if (!pattern.test(to)) {
+    alert("Por favor ingresa un correo electrónico válido");
+    return false;
+  }
+  return true;
 }
 
 //Contact Send Info
 function setValue(e) {
   html = document.getElementById("Message").value;
-  to = document.getElementById("email").value;
+  //to = document.getElementById("email").value;
   about = "Pagina MagicSweet";
   contacBy = document.getElementById("contacBy").value;
   customerName = document.getElementById("customerName").value;
   movil = document.getElementById("celular").value;
-  if(to === " "){
-    alert("escribe nombre de usurio");
-    email.focus()
-  }
+
 }
 
 async function sendMail() {
   if(Object.keys(dataMail).length === 0){
     alert("llena los campos por favor")
   }else{
+   validateEmail(to) 
   const myheaders = new Headers();
   myheaders.append("Content-Type", "application/x-www-form-urlencoded");
   var urlencoded = new URLSearchParams();
