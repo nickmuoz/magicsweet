@@ -4,6 +4,8 @@
 }
 body {
     font-family: "Times New Roman", Georgia, Serif;
+  background:url(imagenes/wallper2.png);
+
   }
 
 #navbar {
@@ -26,7 +28,7 @@ body {
 #home{
   padding-top: 40px;
   padding-bottom: 10px;
-  background:url(imagenes/wallper.png);
+  /* background:url(imagenes/wallper.png); */
 }
 #centerDiv{
   padding-top: 60px;
@@ -58,6 +60,9 @@ object-fit:scale-down
 }
 #menuTitle{
   background-color: #e1f0cd;
+}
+#contact{
+  background-color: #86C8BC;
 }
 
 /*imagen menu*/

@@ -1,12 +1,21 @@
 console.log("Este es archivo de js");
 
-let dataMail = new Object();
-let html = null;
-let to = null;
-let about = null;
-let contacBy = null;
-let customerName = null;
-let movil = null;
+let dataMail = new Object({
+  html: null,
+  to: null,
+  about: null,
+  contacBy:null,
+  customerName:null,
+  movil:null
+})
+
+// let dataMail = new Object();
+// let html = null;
+// let to = null;
+// let about = null;
+// let contacBy = null;
+// let customerName = null;
+// let movil = null;
 
 function validateEmail() {
   console.log("Validate Mail")
@@ -21,20 +30,19 @@ function validateEmail() {
 
 //Contact Send Info
 function setValue(e) {
-  html = document.getElementById("Message").value;
-  //to = document.getElementById("email").value;
-  about = "Pagina MagicSweet";
-  contacBy = document.getElementById("contacBy").value;
-  customerName = document.getElementById("customerName").value;
-  movil = document.getElementById("celular").value;
-
+  dataMail.html = document.getElementById("Message").value;
+  dataMail.to = document.getElementById("email").value;
+  dataMail.about = "Pagina MagicSweet";
+  dataMail.contacBy = document.getElementById("contacBy").value;
+  dataMail.customerName = document.getElementById("customerName").value;
+  dataMail.movil = document.getElementById("celular").value;
 }
 
 async function sendMail() {
   if(Object.keys(dataMail).length === 0){
     alert("llena los campos por favor")
   }else{
-   validateEmail(to) 
+  // validateEmail(to) 
   const myheaders = new Headers();
   myheaders.append("Content-Type", "application/x-www-form-urlencoded");
   var urlencoded = new URLSearchParams();
@@ -43,17 +51,17 @@ async function sendMail() {
     "html",
     `
 <div class="card">
-    <h1>Bienvenido ${ customerName}</h1>
+    <h1>Bienvenido ${dataMail.customerName}</h1>
     <p class="title">Para Nosotros es muy importante tu opinion</p>
-    <p>Mi Celuar es: ${movil}</p>
-    <p>Mi Correo es: ${to}</p>
-    <p>Los Encontre en: ${contacBy}</p>
-    <p>Estoy Interesado en: ${html}</p>
+    <p>Mi Celuar es: ${dataMail.movil}</p>
+    <p>Mi Correo es: ${dataMail.to}</p>
+    <p>Los Encontre en: ${dataMail.contacBy}</p>
+    <p>Estoy Interesado en: ${dataMail.html}</p>
 </div>`
   );
-  urlencoded.append("name", customerName)
-  urlencoded.append("text", contacBy);
-  urlencoded.append("subject", about);
+  urlencoded.append("name", dataMail.customerName)
+  urlencoded.append("text", dataMail.contacBy);
+  urlencoded.append("subject", dataMail.about);
   urlencoded.append("from", "negocioscol@interactivebytes.co");
 
   var requestOptions = {
