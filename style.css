@@ -127,6 +127,19 @@ object-fit:scale-down
   background-color: #ABD9FF;
   font-size: bold;
 }
+/* #imgMenuContainer{
+  width: 100%; /* Adjust the container width as needed */
+  height: 0;
+  padding-bottom: 100%; /* Maintain aspect ratio */
+}
+
+#imgMenuContainer #imgMenu{
+  top: 0;
+  left: 0;
+  object-fit: contain;
+} */
+
+
 
 footer{
   background-color: #ABD9FF
